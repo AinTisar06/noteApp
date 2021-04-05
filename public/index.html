@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+      integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="/src/scripts/notes-functions.js" defer></script>
+    <script src="/src/scripts/notes-app.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Notes App</h1>
+        <h2 class="header__subtitle">Take notes and never forget</h2>
+      </div>
+    </header>
+    <div class="actions">
+      <div class="actions__container">
+        <input
+          id="search-text"
+          type="text"
+          class="input"
+          placeholder="Filter notes"
+        />
+        <select id="filter-by" class="dropdown">
+          <option value="byEdited">Sort by last edited</option>
+          <option value="byCreated">Sort by recently created</option>
+          <option value="alphabetical">Sort alphabetically</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="notes"></div>
+    <button id="create-note">Create Note</button>
+  </body>
+</html>
