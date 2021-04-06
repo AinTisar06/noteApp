@@ -33,7 +33,7 @@ bodyElement.addEventListener("input", (e) => {
 removeElement.addEventListener("click", (e) => {
   removeNote(note.id);
   saveNotes(notes);
-  location.assign("/index.html");
+  location.assign("/public/index.html");
 });
 
 window.addEventListener("storage", (e) => {
@@ -42,7 +42,7 @@ window.addEventListener("storage", (e) => {
     note = notes.find((note) => note.id === noteId);
 
     if (!note) {
-      location.assign("/index.html");
+      location.assign("/public/index.html");
     }
 
     titleElement.value = note.title;
