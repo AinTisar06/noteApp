@@ -6,6 +6,7 @@ HTML5 \
 CSS3 \
 SASS \
 JS \
+WebPack \
 UUIDV4 \
 MOMENT.JS
 

@@ -7,16 +7,9 @@
     <title>Notes App</title>
     <link rel="shortcut icon" href="/public/images/favicon.png" type="image/x-icon">
     <!-- Css -->
-    <link rel="stylesheet" href="/src/styles/css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- Scripts -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
-      integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script src="/src/scripts/notes-functions.js" defer></script>
-    <script src="/src/scripts/notes-edit.js" defer></script>
+    <script src="./scripts/edit-bundle.js" defer ></script>
   </head>
   <body>
     <div class="header">
@@ -27,7 +20,7 @@
     </div>
     <div class="actions">
       <div class="actions__container actions__container--spaced">
-        <a href="/index.html">Home</a>
+        <a href="./index.html">Home</a>
         <span id="last-edited"></span>
       </div>
     </div>
